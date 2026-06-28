@@ -1,0 +1,190 @@
+{
+  "categories": [
+    {
+      "id": "anxiety",
+      "title": "Anxiety",
+      "blurb": "Worry about what might happen.",
+      "prompts": [
+        "Name the thing you are anxious about. Now separate the event from your judgment of it: what is actually happening, and what is the story you are telling yourself on top of it? Set the story down for a moment and ask what, if anything, is yours to do right now.",
+        "Most of what you fear today will never arrive. Ask yourself: what is the very worst that could actually happen, and could you bear it? More often than not, you could. The anxiety lives in anticipation, not in the event itself.",
+        "Your body is responding to a thought, not a threat. Notice the sensation without adding judgment. Come back to what is in front of you, not what might be ahead of you."
+      ],
+      "quotes": [
+        { "id": "anxiety-0", "text": "Men are disturbed not by things, but by the views which they take of things.", "author": "Epictetus", "work": "Enchiridion", "locator": "5" },
+        { "id": "anxiety-1", "text": "If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgment about it. And it is in thy power to wipe out this judgment now.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "8.47" },
+        { "id": "anxiety-2", "text": "To-day I have got out of all trouble, or rather I have cast out all trouble, for it was not outside, but within and in my opinions.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "9.13" },
+        { "id": "anxiety-3", "text": "There are things which are within our power, and there are things which are beyond our power.", "author": "Epictetus", "work": "Enchiridion", "locator": "1" }
+      ]
+    },
+    {
+      "id": "anger",
+      "title": "Anger",
+      "blurb": "Resentment at how others act.",
+      "prompts": [
+        "Before you react, picture the person who provoked you as someone acting out of their own ignorance of good and evil. What does it cost you to answer in kind? Decide who you want to be in this exchange, then respond from there rather than from the heat.",
+        "When you feel anger rising, ask whose character is being revealed in your response. Whoever provoked you has already acted; what you do next is entirely yours. Choose whether to add to the harm or stop it here.",
+        "The stronger the pull to strike back, the more it is costing you. Anger spends your peace on someone else's wrong. Ask what it is worth to you—and whether the debt is one you want to carry."
+      ],
+      "quotes": [
+        { "id": "anger-0", "text": "The best way of avenging thyself is not to become like the wrong-doer.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "6.6" },
+        { "id": "anger-1", "text": "Remember that it is not he who gives abuse or blows, who affronts, but the view we take of these things as insulting. When, therefore, anyone provokes you, be assured that it is your own opinion which provokes you.", "author": "Epictetus", "work": "Enchiridion", "locator": "20" },
+        { "id": "anger-2", "text": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial. All these things happen to them by reason of their ignorance of what is good and evil.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "2.1" },
+        { "id": "anger-3", "text": "Everything has two handles: one by which it may be borne, another by which it cannot.", "author": "Epictetus", "work": "Enchiridion", "locator": "43" }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Grief",
+      "blurb": "The pain of loss.",
+      "prompts": [
+        "What you grieve was never owned, only lent. Let yourself feel the loss fully, then try saying of it: I have given it back, not lost it. What did having it teach you that remains yours even now?",
+        "Grief is the price of love, and it is an honest one. Do not try to talk yourself out of it too quickly. Let it be what it is, and then, when you can, look at what remains—because something always does.",
+        "You have lost a form of what you loved, not the love itself. That is still yours. Return to what you can tend, what you can honor, and what continues to call for your presence."
+      ],
+      "quotes": [
+        { "id": "grief-0", "text": "Never say of anything, \"I have lost it,\" but, \"I have restored it.\" Has your child died? It is restored. Has your wife died? She is restored.", "author": "Epictetus", "work": "Enchiridion", "locator": "11" },
+        { "id": "grief-1", "text": "If you embrace your child or your wife, that you embrace a mortal—and thus, if either of them dies, you can bear it.", "author": "Epictetus", "work": "Enchiridion", "locator": "3" },
+        { "id": "grief-2", "text": "Demand not that events should happen as you wish; but wish them to happen as they do happen, and you will go on well.", "author": "Epictetus", "work": "Enchiridion", "locator": "8" }
+      ]
+    },
+    {
+      "id": "fear-of-death",
+      "title": "Fear of Death",
+      "blurb": "Dread of the end.",
+      "prompts": [
+        "Notice that what frightens you is not death itself but your idea of it. If your time is finite, what does that make urgent today? Choose one thing you would not want left undone, and turn toward it.",
+        "Every moment you spend fearing death is a moment taken from living. The Stoics did not ask you to want death but to stop fleeing it—because the fleeing robs you more than death itself could.",
+        "Consider all that came before you and all that will come after. You have had your time in the light; so has everyone. What matters is not how long but how used."
+      ],
+      "quotes": [
+        { "id": "fear-of-death-0", "text": "Do not act as if thou wert going to live ten thousand years. Death hangs over thee. While thou livest, while it is in thy power, be good.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "4.17" },
+        { "id": "fear-of-death-1", "text": "Death is nothing terrible, else it would have appeared so to Socrates. But the terror consists in our notion of death, that it is terrible.", "author": "Epictetus", "work": "Enchiridion", "locator": "5" },
+        { "id": "fear-of-death-2", "text": "If you embrace your child or your wife, that you embrace a mortal—and thus, if either of them dies, you can bear it.", "author": "Epictetus", "work": "Enchiridion", "locator": "3" }
+      ]
+    },
+    {
+      "id": "money-worry",
+      "title": "Money Worry",
+      "blurb": "Fear about wealth and security.",
+      "prompts": [
+        "Separate what you need from what you fear losing. Your worth is not your balance. What in your security is genuinely within your control to tend, and what are you carrying that belongs to fortune, not to you?",
+        "Wealth you do not yet have cannot be taken from you. What you have right now—your mind, your judgment, your capacity to act—is the one possession fortune cannot touch. Start from there.",
+        "Ask yourself what you actually need today, stripped of what you imagine you need. The gap between those two numbers is often where the worry lives. What is enough, honestly?"
+      ],
+      "quotes": [
+        { "id": "money-worry-0", "text": "These reasonings have no logical connection: \"I am richer than you, therefore I am your superior.\" … But you, after all, consist neither in property nor in style.", "author": "Epictetus", "work": "Enchiridion", "locator": "44" },
+        { "id": "money-worry-1", "text": "While he permits you to possess it, hold it as something not your own, as do travelers at an inn.", "author": "Epictetus", "work": "Enchiridion", "locator": "11" },
+        { "id": "money-worry-2", "text": "Beyond our power are body, property, reputation, office, and, in one word, whatever are not properly our own affairs.", "author": "Epictetus", "work": "Enchiridion", "locator": "1" }
+      ]
+    },
+    {
+      "id": "relationship-conflict",
+      "title": "Relationship Conflict",
+      "blurb": "Friction with the people close to you.",
+      "prompts": [
+        "Take hold of this conflict by the handle that can be carried: not the other person's fault, but the bond you share. Where are you adding the judgment \"I have been wronged\" on top of the facts? What would it look like to drop it and still ask for what you need?",
+        "Consider that the other person, too, is acting from their own pain and limited understanding. This is not an excuse—but it is a useful frame. Can you hold the bond and the grievance at once, without letting the grievance swallow the bond?",
+        "Before you speak, ask: is this true, is this necessary, is this kind? You cannot control how you were treated. You can control what you send back into the relationship. Choose what you want to build."
+      ],
+      "quotes": [
+        { "id": "relationship-conflict-0", "text": "Everything has two handles: one by which it may be borne, another by which it cannot. If your brother acts unjustly, do not lay hold on the affair by the handle of his injustice … but rather by the opposite—that he is your brother.", "author": "Epictetus", "work": "Enchiridion", "locator": "43" },
+        { "id": "relationship-conflict-1", "text": "Take away thy opinion, and then there is taken away the complaint, \"I have been harmed.\" Take away the complaint, \"I have been harmed,\" and the harm is taken away.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "4.7" },
+        { "id": "relationship-conflict-2", "text": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "2.1" }
+      ]
+    },
+    {
+      "id": "procrastination",
+      "title": "Procrastination",
+      "blurb": "Putting off what matters.",
+      "prompts": [
+        "Notice how long you have already been postponing this. The time you are waiting for will not return. What is the single next action, and what would it mean to treat this moment as the one in which you do it well?",
+        "The version of you who will feel ready is not coming. There is only the person you are now, holding the thing you mean to do. What is the smallest beginning, and what would it cost to make it right now?",
+        "Think of what you are actually doing when you delay: you are spending your life on something other than what you named as mattering. Is the alternative truly worth more than the thing you are putting off?"
+      ],
+      "quotes": [
+        { "id": "procrastination-0", "text": "Remember how long thou hast been putting off these things, and how often thou hast received an opportunity from the gods, and yet dost not use it.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "2.4" },
+        { "id": "procrastination-1", "text": "How long, then, will you delay to demand of yourself the noblest improvements? … If you will be negligent and slothful, and always add procrastination to procrastination … you will insensibly continue to accomplish nothing.", "author": "Epictetus", "work": "Enchiridion", "locator": "51" },
+        { "id": "procrastination-2", "text": "Every moment think steadily as a Roman and a man to do what thou hast in hand with perfect and simple dignity … if thou doest every act of thy life as if it were the last.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "2.5" }
+      ]
+    },
+    {
+      "id": "envy",
+      "title": "Envy",
+      "blurb": "Resenting what others have.",
+      "prompts": [
+        "What does the person you envy actually possess, and at what price did they buy it? Their externals are not your good. Turn back to the one thing that is fully yours: how you use what you have.",
+        "What would it take to stop measuring yourself against others entirely? Their path is not your measure. Return to your own work and ask whether you are advancing against the only standard that cannot be taken: who you were yesterday.",
+        "Envy tells you that you would be happier if you had what they have. But you cannot know what they paid for it, what it costs to maintain, or what it replaces. Look at your own life with the same close attention you give to theirs."
+      ],
+      "quotes": [
+        { "id": "envy-0", "text": "Be not elated at any excellence not your own.", "author": "Epictetus", "work": "Enchiridion", "locator": "6" },
+        { "id": "envy-1", "text": "Is anyone preferred before you at an entertainment … ? If these things are good, you ought to rejoice that he has them; and if they are evil, do not be grieved that you have them not.", "author": "Epictetus", "work": "Enchiridion", "locator": "25" },
+        { "id": "envy-2", "text": "These reasonings have no logical connection: \"I am richer than you, therefore I am your superior.\" … But you, after all, consist neither in property nor in style.", "author": "Epictetus", "work": "Enchiridion", "locator": "44" }
+      ]
+    },
+    {
+      "id": "failure-setback",
+      "title": "Failure & Setback",
+      "blurb": "When things go wrong.",
+      "prompts": [
+        "The obstacle in front of you is also material to work with. Strip away \"this should not have happened.\" Given that it did, what does it make possible, demand, or teach? Find the one move it opens up.",
+        "A setback is not a verdict. It is data. Ask what it is showing you that you could not see before—about your plan, your preparation, or your assumptions. Then revise and continue.",
+        "You did not fail because you are less than others. You failed because something was harder than expected, or you were not yet ready. Both are workable. Neither is permanent."
+      ],
+      "quotes": [
+        { "id": "failure-setback-0", "text": "The mind converts and changes every hindrance to its activity into an aid; and so that which is a hindrance is made a furtherance to an act; and that which is an obstacle on the road helps us on this road.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "5.20" },
+        { "id": "failure-setback-1", "text": "Men are disturbed not by things, but by the views which they take of things.", "author": "Epictetus", "work": "Enchiridion", "locator": "5" },
+        { "id": "failure-setback-2", "text": "If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgment about it. And it is in thy power to wipe out this judgment now.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "8.47" }
+      ]
+    },
+    {
+      "id": "loss-of-control",
+      "title": "Loss of Control",
+      "blurb": "When events are out of your hands.",
+      "prompts": [
+        "Draw the line clearly: list what here is within your power and what is not. Spend nothing on the second column. Then put your whole effort into the first, and let the rest unfold as it will.",
+        "Release is not defeat. Accepting what is beyond your power is not weakness—it is precision. It frees you to put your energy where it can actually change something. What, right now, can you change?",
+        "The turbulence around you does not have to become turbulence within you. Your inner ground is yours to tend. What would it feel like to let the storm pass without letting it in?"
+      ],
+      "quotes": [
+        { "id": "loss-of-control-0", "text": "There are things which are within our power, and there are things which are beyond our power. Within our power are opinion, aim, desire, aversion … Beyond our power are body, property, reputation, office.", "author": "Epictetus", "work": "Enchiridion", "locator": "1" },
+        { "id": "loss-of-control-1", "text": "Demand not that events should happen as you wish; but wish them to happen as they do happen, and you will go on well.", "author": "Epictetus", "work": "Enchiridion", "locator": "8" },
+        { "id": "loss-of-control-2", "text": "While he permits you to possess it, hold it as something not your own, as do travelers at an inn.", "author": "Epictetus", "work": "Enchiridion", "locator": "11" }
+      ]
+    },
+    {
+      "id": "self-doubt",
+      "title": "Self-Doubt",
+      "blurb": "Questioning your own worth.",
+      "prompts": [
+        "Stop waiting for permission to become who you intend to be. You will not always feel ready. Choose the standard you want to live by, and act as one already practicing it, even imperfectly.",
+        "Your doubts are not facts. They are opinions you are having about yourself, and like all opinions, they can be examined. Ask: is this actually true, or is it a habit of thought I have carried for a long time without questioning?",
+        "Act as if you were already the person you are trying to become. Not as a pretense, but as practice. Character is built by doing, not by waiting until you feel certain enough to begin."
+      ],
+      "quotes": [
+        { "id": "self-doubt-0", "text": "You are no longer a boy but a grown man … This instant, then, think yourself worthy of living as a man grown up and a proficient. … Though you are not yet a Socrates, you ought, however, to live as one seeking to be a Socrates.", "author": "Epictetus", "work": "Enchiridion", "locator": "51" },
+        { "id": "self-doubt-1", "text": "If anything in thy own disposition gives thee pain, who hinders thee from correcting thy opinion?", "author": "Marcus Aurelius", "work": "Meditations", "locator": "8.47" },
+        { "id": "self-doubt-2", "text": "Be not elated at any excellence not your own.", "author": "Epictetus", "work": "Enchiridion", "locator": "6" }
+      ]
+    },
+    {
+      "id": "overwhelm",
+      "title": "Overwhelm",
+      "blurb": "Too much, all at once.",
+      "prompts": [
+        "Stop trying to carry your whole life at once. Bring it down to this single hour: what here is genuinely unbearable, right now? Almost always, less than it seemed. Do the one thing in front of you with full attention.",
+        "You cannot carry tomorrow and today at once. Set down everything that belongs to another hour, another day. What is the single most important thing in front of you right now? That is the only thing. Everything else can wait.",
+        "The feeling of overwhelm often comes from treating a list as a whole weight instead of as separate tasks. Separate them. Which one, if done, would make the rest lighter? Start there."
+      ],
+      "quotes": [
+        { "id": "overwhelm-0", "text": "Do not disturb thyself by thinking of the whole of thy life … but on every occasion ask thyself, What is there in this which is intolerable and past bearing? … neither the future nor the past pains thee, but only the present.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "8.36" },
+        { "id": "overwhelm-1", "text": "Every moment think steadily as a Roman and a man to do what thou hast in hand with perfect and simple dignity … and to give thyself relief from all other thoughts.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "2.5" },
+        { "id": "overwhelm-2", "text": "To-day I have got out of all trouble, or rather I have cast out all trouble, for it was not outside, but within and in my opinions.", "author": "Marcus Aurelius", "work": "Meditations", "locator": "9.13" }
+      ]
+    }
+  ],
+  "sources": [
+    { "author": "Marcus Aurelius", "work": "Meditations", "translation": "George Long (1862)", "publicDomain": true, "origin": "Project Gutenberg #15877" },
+    { "author": "Epictetus", "work": "Enchiridion", "translation": "Thomas Wentworth Higginson (1865)", "publicDomain": true, "origin": "Project Gutenberg #45109" }
+  ]
+}
