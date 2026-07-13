@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../data/content_repository.dart';
 import '../models/content.dart';
 import '../services/favorites_service.dart';
@@ -53,13 +54,13 @@ class _AppShellState extends State<AppShell> {
         indicatorColor: colors.accent.withValues(alpha: 0.15),
         destinations: [
           NavigationDestination(
-            icon: Icon(Icons.home_outlined, color: colors.muted),
-            selectedIcon: Icon(Icons.home, color: colors.accent),
+            icon: Icon(LucideIcons.house, color: colors.muted),
+            selectedIcon: Icon(LucideIcons.house500, color: colors.accent),
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.bookmark_border, color: colors.muted),
-            selectedIcon: Icon(Icons.bookmark, color: colors.accent),
+            icon: Icon(LucideIcons.bookmark, color: colors.muted),
+            selectedIcon: Icon(LucideIcons.bookmark500, color: colors.accent),
             label: 'Saved',
           ),
         ],

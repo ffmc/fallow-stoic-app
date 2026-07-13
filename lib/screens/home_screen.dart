@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../data/content_repository.dart';
 import '../models/content.dart';
 import '../services/favorites_service.dart';
 import '../theme/app_theme.dart';
+import '../theme/tokens.dart';
+import '../widgets/horizon_line.dart';
 import 'category_detail_screen.dart';
 import 'info_screen.dart';
 
@@ -35,20 +38,20 @@ class HomeScreen extends StatelessWidget {
         slivers: [
           SliverAppBar(
             pinned: true,
-            title: Text('Fallow', style: Theme.of(context).textTheme.titleLarge?.copyWith(color: colors.accent)),
+            title: Text('Fallow', style: Theme.of(context).textTheme.titleLarge),
             actions: [
               ValueListenableBuilder<ThemeMode>(
                 valueListenable: themeMode,
                 builder: (context, _, __) => IconButton(
                   icon: Icon(
-                    isDark ? Icons.light_mode_outlined : Icons.dark_mode_outlined,
+                    isDark ? LucideIcons.sun : LucideIcons.moon,
                     color: colors.muted,
                   ),
                   onPressed: () => _toggleTheme(context),
                 ),
               ),
               IconButton(
-                icon: Icon(Icons.info_outline, color: colors.muted),
+                icon: Icon(LucideIcons.info, color: colors.muted),
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (_) => const InfoScreen()),
                 ),
@@ -57,27 +60,30 @@ class HomeScreen extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 24, 20, 8),
+              padding: const EdgeInsets.fromLTRB(Space.xl, Space.xl, Space.xl, Space.sm),
               child: Text(
                 'What are you facing?',
-                style: Theme.of(context).textTheme.displaySmall?.copyWith(fontSize: 28),
+                style: Theme.of(context).textTheme.displaySmall,
               ),
             ),
           ),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (context, i) => _CategoryRow(
-                category: categories[i],
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CategoryDetailScreen(
-                      category: categories[i],
-                      favorites: favorites,
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(Space.xl, Space.xs, Space.xl, Space.sm),
+            sliver: SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (context, i) => _CategoryTile(
+                  category: categories[i],
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => CategoryDetailScreen(
+                        category: categories[i],
+                        favorites: favorites,
+                      ),
                     ),
                   ),
                 ),
+                childCount: categories.length,
               ),
-              childCount: categories.length,
             ),
           ),
         ],
@@ -86,49 +92,46 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class _CategoryRow extends StatelessWidget {
+class _CategoryTile extends StatelessWidget {
   final ProblemCategory category;
   final VoidCallback onTap;
 
-  const _CategoryRow({required this.category, required this.onTap});
+  const _CategoryTile({required this.category, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     final colors = AppColors.of(context);
-    return InkWell(
-      onTap: onTap,
+    return Semantics(
+      button: true,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-        decoration: BoxDecoration(
-          border: Border(bottom: BorderSide(color: colors.border)),
-        ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    category.title,
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleLarge
-                        ?.copyWith(fontSize: 19),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    category.blurb,
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium
-                        ?.copyWith(fontSize: 14),
-                  ),
-                ],
-              ),
+        margin: const EdgeInsets.only(bottom: Space.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.lg),
+          onTap: onTap,
+          child: Container(
+            padding: const EdgeInsets.all(Space.xl),
+            decoration: BoxDecoration(
+              color: colors.surfaceRaised,
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              border: Border.all(color: colors.border),
             ),
-            const SizedBox(width: 12),
-            Icon(Icons.arrow_forward_ios, size: 14, color: colors.muted),
-          ],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  category.title,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                const SizedBox(height: Space.xs),
+                Text(
+                  category.blurb,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const SizedBox(height: Space.lg),
+                HorizonLine(color: colors.accent),
+              ],
+            ),
+          ),
         ),
       ),
     );

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../models/content.dart';
 import '../services/favorites_service.dart';
 import '../theme/app_theme.dart';
+import '../theme/tokens.dart';
+import '../widgets/horizon_line.dart';
 import '../widgets/quote_card.dart';
 
 class CategoryDetailScreen extends StatefulWidget {
@@ -21,12 +23,14 @@ class CategoryDetailScreen extends StatefulWidget {
 
 class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
   late final String _prompt;
+  late final List<Quote> _quotes;
 
   @override
   void initState() {
     super.initState();
     final prompts = widget.category.prompts;
     _prompt = prompts[Random().nextInt(prompts.length)];
+    _quotes = List.of(widget.category.quotes)..shuffle();
   }
 
   @override
@@ -35,13 +39,13 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.category.title)),
       body: ListView(
-        padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
+        padding: const EdgeInsets.fromLTRB(Space.xl, Space.sm, Space.xl, Space.xl2),
         children: [
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(Space.xl),
             decoration: BoxDecoration(
-              color: colors.surfaceAlt,
-              borderRadius: BorderRadius.circular(18),
+              color: colors.surfaceRaised,
+              borderRadius: BorderRadius.circular(AppRadius.lg),
               border: Border.all(color: colors.border),
             ),
             child: Column(
@@ -49,32 +53,29 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
               children: [
                 Text(
                   'REFLECT',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  style: Theme.of(context).textTheme.labelSmall?.copyWith(
                         color: colors.accent,
-                        fontSize: 11,
-                        letterSpacing: 2,
-                        fontWeight: FontWeight.w600,
-                        fontStyle: FontStyle.normal,
                       ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: Space.sm),
                 Text(
                   _prompt,
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontSize: 17,
-                        height: 1.65,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: colors.text,
                       ),
                 ),
+                const SizedBox(height: Space.lg),
+                HorizonLine(color: colors.accent),
               ],
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: Space.xl),
           Text(
             'From the Stoics',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 18),
+            style: Theme.of(context).textTheme.headlineSmall,
           ),
-          const SizedBox(height: 12),
-          ...widget.category.quotes.map(
+          const SizedBox(height: Space.md),
+          ..._quotes.map(
             (q) => QuoteCard(quote: q, favorites: widget.favorites),
           ),
         ],
