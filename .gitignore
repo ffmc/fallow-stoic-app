@@ -20,3 +20,6 @@ sources/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Claude Code instructions
+CLAUDE.md
