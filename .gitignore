@@ -13,3 +13,10 @@ android/.kotlin/
 
 # Public-domain source texts, kept locally for quote verification only
 sources/
+
+# IDE
+.idea/
+*.iml
+
+# Claude Code local settings
+.claude/settings.local.json
